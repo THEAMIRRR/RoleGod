@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"], intents: ["GUILD_MESSAGES", "GUILDS", "GUILD_MESSAGE_REACTIONS", "DIRECT_MESSAGES", "GUILD_MESSAGE_TYPING", "DIRECT_MESSAGE_REACTIONS"] });
 
-const prefix = 'R.';
+const prefix = '!';
 
 const fs = require('fs');
 

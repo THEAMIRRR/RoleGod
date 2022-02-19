@@ -21,12 +21,18 @@ module.exports = {
             .setColor('#17b111')
             .setTitle('React to the corresponding emojis to get personalized notifications!')
             .setDescription('Once reacting you will gain your roles!\n\n'
-                + `${MaleEmoji} for ${MaleName}\n` //copy this line
-                + `${FemaleEmoji} for ${FemaleName}\n`)
+                + `${RedEmoji} for ${RedName}\n` //copy this line
+                + `${BlueEmoji} for ${BlueName}\n`
+                + `${GreenEmoji} for ${GreenName}\n`
+                + `${OrangeEmoji} for ${OrangeName}\n`
+                + `${YellowEmoji} for ${YellowName}\n`)
 
         console.log("Reactionrole Message Created")
         let msg = await message.channel.send({ embeds: [AAAAembed]});
-        msg.react(`${MaleEmoji}`) //copy this
-        msg.react(`${FemaleEmoji}`)
+        msg.react(`${RedEmoji}`) //copy this
+        msg.react(`${BlueEmoji}`)
+        msg.react(`${GreenEmoji}`)
+        msg.react(`${OrangeEmoji}`)
+        msg.react(`${YellowEmoji}`)
     }
 }
