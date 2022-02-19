@@ -8,10 +8,16 @@ const fs = require('fs');
 
 client.commands = new Discord.Collection();
 
-const { MaleEmoji } = require('./config.json');
-const { MaleRole } = require('./config.json');
-const { FemaleEmoji } = require('./config.json');
-const { FemaleRole } = require('./config.json');
+const { RedEmoji } = require('./config.json');
+const { RedRole } = require('./config.json');
+const { BlueEmoji } = require('./config.json');
+const { BlueRole } = require('./config.json');
+const { GreenEmoji } = require('./config.json');
+const { GreenRole } = require('./config.json');
+const { OrangeEmoji } = require('./config.json');
+const { OrangeRole } = require('./config.json');
+const { YellowEmoji } = require('./config.json');
+const { YellowRole } = require('./config.json');
 const { botToken } = require('./config.json');
 const { channel } = require('./config.json');
 
@@ -47,11 +53,20 @@ client.on('messageReactionAdd', async (reaction, user) => { //here
     if (user.bot) return;
     if (!reaction.message.guild) return;
     if (reaction.message.channel.id == channel) {
-        if (reaction.emoji.name === MaleEmoji) { //you copy
-            await reaction.message.guild.members.cache.get(user.id).roles.add(MaleRole); //these 3
-        } //lines
-        if (reaction.emoji.name === FemaleEmoji) {
-            await reaction.message.guild.members.cache.get(user.id).roles.add(FemaleRole);
+        if (reaction.emoji.name === RedEmoji) { 
+            await reaction.message.guild.members.cache.get(user.id).roles.add(RedRole);
+        } 
+        if (reaction.emoji.name === BlueEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.add(BlueRole);
+        }
+         if (reaction.emoji.name === GreenEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.add(GreenRole);
+        }
+         if (reaction.emoji.name === OrangeEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.add(OrangeRole);
+        }
+         if (reaction.emoji.name === YellowEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.add(YellowRole);
         }
     }
 }
@@ -64,11 +79,20 @@ client.on('messageReactionRemove', async (reaction, user) => {
     if (!reaction.message.guild) return;
 
     if (reaction.message.channel.id == channel) {
-        if (reaction.emoji.name === MaleEmoji) { //you copy
-            await reaction.message.guild.members.cache.get(user.id).roles.remove(MaleRole); //these 3
+        if (reaction.emoji.name === RedEmoji) { //you copy
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(RedRole); //these 3
         } //lines
-        if (reaction.emoji.name === FemaleEmoji) {
-            await reaction.message.guild.members.cache.get(user.id).roles.remove(FemaleRole);
+        if (reaction.emoji.name === BlueEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(BlueRole);
+        }
+        if (reaction.emoji.name === GreenEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(GreenRole);
+        }
+        if (reaction.emoji.name === OrangeEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(OrangeRole);
+        }
+        if (reaction.emoji.name === YellowEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(YellowRole);
         }
     }
 }

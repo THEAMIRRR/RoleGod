@@ -4,10 +4,16 @@ module.exports = {
     async execute(message, args, Discord, client) {
         const { channel } = require('../config.json');
 
-        const { MaleEmoji } = require('../config.json');
-        const { MaleName } = require('../config.json')
-        const { FemaleEmoji } = require('../config.json')
-        const { FemaleName } = require('../config.json')
+        const { RedEmoji } = require('../config.json');
+        const { RedName } = require('../config.json')
+        const { BlueEmoji } = require('../config.json')
+        const { BlueName } = require('../config.json')
+        const { GreenEmoji } = require('../config.json');
+        const { GreenName } = require('../config.json')
+        const { OrangeEmoji } = require('../config.json');
+        const { OrangeName } = require('../config.json')
+        const { YellowEmoji } = require('../config.json');
+        const { YellowName } = require('../config.json')
         
 
         const { MessageEmbed } = require('discord.js')
