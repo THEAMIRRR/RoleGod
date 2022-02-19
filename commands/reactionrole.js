@@ -20,12 +20,12 @@ module.exports = {
         let AAAAembed = new Discord.MessageEmbed()
             .setColor('#17b111')
             .setTitle('برای دریافت رنگ رول مورد نظر، ری اکشن رول مربوطه را بزنید!')
-            .setDescription('پس از زدن ری اکشن، رول خود را \n\n'
-                + `${RedEmoji} for ${RedName}\n` //copy this line
-                + `${BlueEmoji} for ${BlueName}\n`
-                + `${GreenEmoji} for ${GreenName}\n`
-                + `${OrangeEmoji} for ${OrangeName}\n`
-                + `${YellowEmoji} for ${YellowName}\n`)
+            .setDescription('پس از زدن ری اکشن، رول به شما داده خواهد شد!\n\n'
+                + `${RedEmoji} برای ${RedName}\n` //copy this line
+                + `${BlueEmoji} برای ${BlueName}\n`
+                + `${GreenEmoji} برای ${GreenName}\n`
+                + `${OrangeEmoji} برای ${OrangeName}\n`
+                + `${YellowEmoji} برای ${YellowName}\n`)
 
         console.log("Reactionrole Message Created")
         let msg = await message.channel.send({ embeds: [AAAAembed]});

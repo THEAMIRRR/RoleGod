@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"
   },
-  "engines": {
+   "engines": {
     "node": "16.x"
   },
   "author": "Folded Lettuce",
