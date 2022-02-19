@@ -1,0 +1,10 @@
+﻿{
+  "channel": "channelid",
+  "MaleEmoji": "👨",
+  "FemaleEmoji": "👩",
+  "MaleName": "Male",
+  "FemaleName": "Female",
+  "MaleRole": "roleid",
+  "FemaleRole": "roleid",
+  "botToken": "Token_Here"
+}
