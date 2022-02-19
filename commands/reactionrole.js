@@ -19,8 +19,8 @@ module.exports = {
         const { MessageEmbed } = require('discord.js')
         let AAAAembed = new Discord.MessageEmbed()
             .setColor('#17b111')
-            .setTitle('React to the corresponding emojis to get personalized notifications!')
-            .setDescription('Once reacting you will gain your roles!\n\n'
+            .setTitle('برای دریافت رنگ رول مورد نظر، ری اکشن رول مربوطه را بزنید!')
+            .setDescription('پس از زدن ری اکشن، رول خود را \n\n'
                 + `${RedEmoji} for ${RedName}\n` //copy this line
                 + `${BlueEmoji} for ${BlueName}\n`
                 + `${GreenEmoji} for ${GreenName}\n`
